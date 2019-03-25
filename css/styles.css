@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+/* Color used 
+
+#83c287
+#fffaf7
+#84c318
+#fc4949
+#fff
+#251605
+
+*/
+
+.wrapper{
+    max-width:60rem;
+    height:auto;
+    text-align:center;
+    margin:0 auto;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color:#384047;
+    font-size:1rem;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+/*navigation*/
+.navigation{
+    background:#83c287;
+    padding:20px;
+    font-size:1.5rem;
+}
+
+.navigation .main-menu{
+    width:100%;
+    display:flex;
+    justify-content:space-around;    
+}
+
+.navigation .main-menu a{
+    color:#fffaf7;
+    text-decoration:none;
+    list-style:none;
+    padding:15px 0;
+    width:100%;
+    text-align:center;
+    transition:all 0.3s;
+    font-weight: bold;    
+}
+
+.navigation .main-menu a:hover{
+    background:#fff;
+    color:#84C318;
+}
+
+/*masthead section*/
+.masthead-bg {
+    clear:both;
+    padding: 10% 0;  
+    background:url(../img/leave.png);
+    background-size:cover;
+}
+
+#tag-line{
+    color:#243010;
+    text-align:center;
+    font-size:3rem;
+    font-family: 'Lora', serif;
+}
+
+/* Main content */
+
+.controls{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    margin-top:30px;
+}
+
+.controls button{
+    border-radius: 50%;
+    border:none;
+    cursor:pointer;
+}
+
+.controls button:focus{
+    outline-style: unset;
+}
+
+.current-content{
+    margin:20px;
+}
+
+.current-content article img{
+    float: left;
+    max-width:30%;
+    margin-bottom:20px;
+    height:auto;    
+}
+
+.current-content article h2{
+    text-align:left;
+    font-family: 'Rubik', sans-serif;
+    font-size:2.5rem;
+    color:#243010;
+}
+
+.current-content article p{
+    float:left;
+    width:70%;
+    text-align:left;
+    padding-left:8%;
+    font-size:1rem;
+    line-height:1.5;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*footer*/
+
+footer{
+    clear:both;
+}
+
+.footer-icon{
+    background:#83c287;
+    padding:20px;
+    font-size:1.5rem;
+}
+
+.footer-icon .icon-box{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+
+    
+}
+
+.footer-icon .icon-box a{
+    color:#f4f7f8;
+    text-decoration:none;
+    list-style:none;
+    padding:15px 0;
+    width:100%;
+    text-align:center;
+    transition:all 0.3s;
+    
+}
+
+.footer-icon .icon-box a:hover{
+    background:#fff;
+    color:#84C318;
+}
+
+#burger {
+    display:none;
+}
+
+.navigation label{
+    display:none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:30rem) {
+    
+
+#tag-line{
+    font-size:2rem;
+}
+
+    
+.current-content article img{
+        float:none;
+        margin:0;
+    
+}
+    
+.current-content article h2{
+    text-align:center;
+    font-size:1.5rem;
+}
+
+.current-content article p{
+        float:none;
+        text-align:justify;
+        margin:0 auto;
+        padding-left:0;
+        font-size:0.7rem;
+        line-height:1.9;
+}
+
+}
